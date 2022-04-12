@@ -1,0 +1,1069 @@
+@font-face {
+    font-family: "57Futura";
+    src: url("../fonts/57Futura-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Freeride";
+    src: url("../fonts/Freeride.otf") format("opentype");
+}
+
+:root{
+    --dark: #2b2d42;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+    --green-main: #5e9847;
+    --yellow-main: #f5e24d;
+    --light-yellow: #ffe7ab;
+    
+    --blue-main: #a4e6f4;
+    --purple-main: #ba68c8;
+    --light-grey: #f8f7f9;
+    --bg-color: #e6e7e0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: '57Futura', sans-serif;
+}
+body{
+    background-color: black;
+    /* background-image: url(../img/v3resources/png/bg-0.png); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+h1{
+    font-size: 40px;
+    color: var(--yellow-main);
+}
+.pos-absolute{
+    position: absolute;
+}
+.text-font{
+    font-family: 'Freeride', sans-serif;
+}
+.display-flex{
+    display: flex;
+}
+.flex-33{
+    flex: 33%;
+}
+.flex-50{
+    flex: 50%;
+}
+.flex-direction-reverse{
+    flex-direction: row-reverse;
+}
+
+.d-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-flex-nowrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.padding-24{
+    padding: 24px;
+}
+.padding-right-24{
+    padding-right: 24px;
+}
+.padding-left-24{
+    padding-left: 24px;
+}
+.padding-10{
+    padding: 0% 10%;
+}
+.padding-6{
+    padding: 0% 6%;
+}
+
+.margin-top-6{
+    margin-top: 6%;
+}
+.margin-bottom-6{
+    margin-bottom: 6%;
+}
+
+.margin-top-4{
+    margin-top: 4%;
+}
+.margin-bottom-4{
+    margin-bottom: 4%;
+}
+
+.margin-top-3{
+    margin-top: 3%;
+}
+.margin-bottom-3{
+    margin-bottom: 3%;
+}
+
+#header > nav{
+    z-index: 99;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1448px;
+    margin: auto;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.inline{
+    display: inline-block;
+}
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px 4px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 54px;
+    left: 0px;
+    border-radius: 12%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    margin: 0px auto;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: var(--blue-main); transition: all .2s ease-in-out;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; transition: all .2s ease-in-out;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+.leaves-top-right{
+    background: url(../img/v3resources/svg/leaves-top-right.svg) 0 no-repeat;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background-position-x: right;
+    background-position-y: top;
+    right: 0px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.leaves-left-1{
+    background: url(../img/v3resources/svg/leaves-left-1.svg) 0 no-repeat;
+    width: 100%;
+    height: 346px;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: 40%;
+    transition: all .3s ease-in-out;
+}
+
+.leaves-left-2{
+    background: url(../img/v3resources/svg/leaves-left-2.svg) 0 no-repeat;
+    width: 100%;
+    height: 599px;
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+    top: -162px;
+    transition: all .3s ease-in-out;
+}
+
+.leaves-right-1{
+    background: url(../img/v3resources/svg/leaves-right-1.svg) 0 no-repeat;
+    width: 100%;
+    height: 599px;
+    position: absolute;
+    background-position-x: right;
+    transition: all .3s ease-in-out;
+}
+
+.leaves-bottom-left{
+    background: url(../img/v3resources/svg/leaves-bottom-left.svg) 0 no-repeat;
+    width: 100%;
+    height: 599px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.leaves-bottom-right{
+    background: url(../img/v3resources/svg/leaves-bottom-right.svg) 0 no-repeat;
+    width: 100%;
+    height: 599px;
+    position: absolute;
+    background-position-x: right;
+    bottom: 0px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.nav-brand {
+    display: block;
+}
+
+.nav-brand svg{
+    width: 130px;
+    margin: 10px 34px 10px 34px;
+    fill: white;
+}
+
+nav{
+    top: 0px;
+    background-color: transparent;
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 5px 10px rgb(17 170 139 / 0%);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    max-width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+nav:hover{
+    background-color: white;
+    padding: 1em 0;
+    width: 100%;
+    transition: all .3s ease-in-out;
+}
+
+nav:hover .nav-brand svg{
+    fill: black;
+}
+
+nav > .lnbArea{
+    width: 100%;
+}
+
+nav > .lnbArea .dropdown{
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    position: relative;
+    line-height: 30px;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+nav > .lnbArea .dropdown button, nav > .lnbArea .dropdown button a{
+    color: white;
+}
+
+nav:hover > .lnbArea .dropdown button, nav:hover > .lnbArea .dropdown button a{
+    color: var(--light);
+}
+
+nav > .lnbArea .dropdown:hover{
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    position: relative;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0 20px;
+    border-bottom: 4px solid var(--yellow-main);
+}
+
+nav > .lnbArea .dropdown:hover > button, nav > .lnbArea .dropdown:hover > button a {
+    color: var(--yellow-main);
+}
+
+.main-forground{
+    background-image: url(../img/v2rescources/websitebannergif3.gif);
+    background-size: cover;
+}
+
+.site-main{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+.site-main .container form{
+    margin: 2em 0;
+}
+
+
+.main-content h1{
+    text-align: center;
+    margin: 0.3em auto;
+}
+
+.main-content p{
+    margin: 1.3em 15px 30px 15px;
+    text-align: center;
+}
+
+.main-content div img{
+    margin: 0px auto;
+    display: block;
+}
+
+.left-art{
+    background-image: url(../img/v3resources/svg/tree-left.svg);
+    background-repeat: no-repeat;
+    width: 57%;
+    height: 850px;
+}
+
+.right-art{
+    background-image: url(../img/v3resources/svg/gecko-right.svg);
+    background-repeat: no-repeat;
+    width: 43%;
+    background-position-x: right;
+}
+.floating-platform-0 span{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+    top: 273px;
+    left: 100px;
+    font-size: 5em;
+    color: #b07622;
+    transition: all .3s ease-in-out;
+}
+
+.floating-platform-0{
+    background-image: url(../img/v3resources/svg/floating-plateau-0.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: center;
+    background-position-y: center;
+    height: 1580px;
+    position: relative;
+}
+
+.floating-platform-1{
+    background-image: url(../img/v3resources/svg/floating-plateau-1.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: 63%;
+    height: 250px;
+    position: absolute;
+    top: 36px;
+    z-index: -1;
+}
+
+.floating-platform-2{
+    background-image: url(../img/v3resources/svg/floating-plateau-2.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position-x: center;
+    height: 154px;
+    position: absolute;
+    top: -65px;
+}
+.floating-text {
+    text-align: center;
+}
+
+.floating-pos-1 {
+    left: 47%;
+    top: 21%;
+    transition: all .3s ease-in-out;
+}
+
+.floating-pos-2 {
+    left: 37%;
+    top: 34%;
+    transition: all .3s ease-in-out;
+}
+
+.floating-pos-3 {
+    left: 51%;
+    top: 46%;
+    transition: all .3s ease-in-out;
+}
+
+.floating-pos-4 {
+    left: 32%;
+    top: 55%;
+    transition: all .3s ease-in-out;
+}
+
+section{
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+}
+
+.section-offset{
+    margin: -50px 0px 0px 0px;
+}
+
+.section-main-correction{
+    margin-top: 10%;
+    position: relative;
+}
+
+.main-bg{
+    position: relative;
+}
+
+.text-style{
+    font-size: 2em;
+    color: var(--light-yellow);
+    word-spacing: 12px
+}
+
+footer{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.faq-wrapper{
+}
+.faq-wrapper div{
+    text-align: center;
+}
+.faq-wrapper div h2{
+    color: var(--yellow-main);
+    font-weight: 400;
+}
+.faq-wrapper div p{
+    color: white;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+.FAQ-text-pos-1{
+    width: 47%;
+    margin: 70px 0px 0px 48%;
+}
+
+.FAQ-text-pos-2{
+    margin: 70px 0px 0px 30%;
+}
+
+.FAQ-text-pos-3{
+    margin: 70px 0px 0px 4%;
+}
+
+.FAQ-text-pos-4{
+    margin-top: 70px;
+    justify-content: center;
+}
+
+.FAQ-top{
+    text-align: center;
+}
+
+.FAQ-top h1{
+    color: var(--green-main);
+}
+
+.footer-bottom{
+    width: 100%;
+    justify-content: center;
+}
+
+.footer-bottom div{
+    margin: auto 70px;
+}
+.footer-bottom h1{
+    color: white;
+}
+
+.logoBottom{
+    display: block;
+    width: 240px;
+    height: 240px;
+    background: url(../img/v3resources/svg/logo.svg) 0 no-repeat;
+    background-size: contain;
+    filter: invert(1);
+}
+
+.Icons{
+    float: right;
+    color: var(--yellow-main);
+    transition: all .3s ease-in-out;
+    -webkit-text-fill-color: var(--yellow-main);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.Icons:hover{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.Icons i{
+    font-size: 65px;
+    transition: all .3s ease-in-out;
+}
+
+.Icons i:hover{
+    color: var(--yellow-main);
+    font-size: 80px;
+    transition: all .3s ease-in-out;
+}
+
+address{
+    font-size: 16px;
+    margin: 4px auto;
+}
+
+
+@media only screen and (max-width: 1448px){
+    .container{
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .leaves-top-right {
+        background: url(../img/v3resources/svg/leaves-top-right.svg) 0 no-repeat;
+        width: 100%;
+        height: 310px;
+        position: absolute;
+        background-position-x: right;
+        background-position-y: top;
+        right: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-left-1 {
+        background: url(../img/v3resources/svg/leaves-left-1.svg) 0 no-repeat;
+        width: 100%;
+        height: 218px;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+        top: 40%;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-left-2 {
+        background: url(../img/v3resources/svg/leaves-left-2.svg) 0 no-repeat;
+        width: 100%;
+        height: 356px;
+        position: absolute;
+        left: 0px;
+        z-index: -1;
+        top: 0px;
+        transition: all .3s ease-in-out;
+    }
+    .left-art {
+        background-image: url(../img/v3resources/svg/tree-left.svg);
+        background-repeat: no-repeat;
+        width: 57%;
+        height: 822px;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-1{
+        background-image: url(../img/v3resources/svg/floating-plateau-1.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: 63%;
+        height: 179px;
+        position: absolute;
+        top: 36px;
+        z-index: -1;
+    }
+    
+    .floating-platform-2{
+        background-image: url(../img/v3resources/svg/floating-plateau-2.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        height: 130px;
+        position: absolute;
+        top: -65px;
+    }
+    .floating-pos-1 {
+        left: 48%;
+        top: 21%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-2 {
+        left: 34%;
+        top: 34%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-3 {
+        left: 51%;
+        top: 46%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-4 {
+        left: 21%;
+        top: 53%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0{
+        background-image: url(../img/v3resources/svg/floating-plateau-0.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        background-position-y: center;
+        height: 1350px;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0 span{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        top: 50px;
+        left: 1px;
+        font-size: 5em;
+        color: #b07622;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-bottom-left{
+        background: url(../img/v3resources/svg/leaves-bottom-left.svg) 0 no-repeat;
+        width: 100%;
+        height: 420px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-bottom-right{
+        background: url(../img/v3resources/svg/leaves-bottom-right.svg) 0 no-repeat;
+        width: 100%;
+        height: 420px;
+        position: absolute;
+        background-position-x: right;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+}
+@media only screen and (max-width: 1200px){
+    .container{
+        max-width: 1024px;
+        margin: auto;
+    }
+    .floating-text{
+        font-size: 12px;
+    }
+    .left-art {
+        background-image: url(../img/v3resources/svg/tree-left.svg);
+        background-repeat: no-repeat;
+        width: 57%;
+        height: 604px;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0{
+        background-image: url(../img/v3resources/svg/floating-plateau-0.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        background-position-y: center;
+        height: 1163px;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-right-1{
+        background: url(../img/v3resources/svg/leaves-right-1.svg) 0 no-repeat;
+        width: 100%;
+        height: 360px;
+        position: absolute;
+        background-position-x: right;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-1 {
+        left: 48%;
+        top: 22%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-2 {
+        left: 32%;
+        top: 35%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-3 {
+        left: 51%;
+        top: 46%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-4 {
+        left: 21%;
+        top: 53%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0 span {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        font-size: 5em;
+        color: #b07622;
+        transition: all .3s ease-in-out;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .container{
+        max-width: 800px;
+        margin: auto;
+    }
+    .logoArea{
+        display: none;
+    }
+    h1 {
+        font-size: 28px;
+        color: var(--yellow-main);
+    }
+    .floating-text{
+        font-size: 10px;
+    }
+    .left-art {
+        background-image: url(../img/v3resources/svg/tree-left.svg);
+        background-repeat: no-repeat;
+        width: 57%;
+        height: 604px;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0{
+        background-image: url(../img/v3resources/svg/floating-plateau-0.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        background-position-y: center;
+        height: 985px;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-1{
+        background-image: url(../img/v3resources/svg/floating-plateau-1.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: 63%;
+        height: 152px;
+        position: absolute;
+        top: 36px;
+        z-index: -1;
+    }
+    .floating-platform-2{
+        background-image: url(../img/v3resources/svg/floating-plateau-2.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        height: 130px;
+        position: absolute;
+        top: -65px;
+    }
+    .leaves-right-1{
+        background: url(../img/v3resources/svg/leaves-right-1.svg) 0 no-repeat;
+        width: 100%;
+        height: 278px;
+        position: absolute;
+        background-position-x: right;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-1 {
+        left: 48%;
+        top: 24%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-2 {
+        left: 32%;
+        top: 35%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-3 {
+        left: 51%;
+        top: 46%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-4 {
+        left: 21%;
+        top: 53%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0 span {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        font-size: 5em;
+        color: #b07622;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-bottom-left{
+        background: url(../img/v3resources/svg/leaves-bottom-left.svg) 0 no-repeat;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    
+    .leaves-bottom-right{
+        background: url(../img/v3resources/svg/leaves-bottom-right.svg) 0 no-repeat;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        background-position-x: right;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    .footer-bottom{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-bottom div{
+        margin: auto 30px;
+    }
+    .footer-bottom h1{
+        color: white;
+    }
+    
+    .logoBottom{
+        display: block;
+        width: 110px;
+        height: 240px;
+        background: url(../img/v3resources/svg/logo.svg) 0 no-repeat;
+        background-size: contain;
+        filter: invert(1);
+    }
+    
+}
+@media only screen and (max-width: 800px){
+    .container{
+        max-width: 600px;
+        margin: auto;
+    }
+    .logoArea{
+        display: none;
+    }
+    h1 {
+        font-size: 28px;
+        color: var(--yellow-main);
+    }
+    .main-content div img{
+        margin: 0px auto;
+        display: block;
+        height: 480px;
+    }
+    .floating-text{
+        font-size: 10px;
+    }
+    .left-art {
+        background-image: url(../img/v3resources/svg/tree-left.svg);
+        background-repeat: no-repeat;
+        width: 57%;
+        height: 380px;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0{
+        background-image: url(../img/v3resources/svg/floating-plateau-0.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        background-position-y: center;
+        height: 985px;
+        position: relative;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-1{
+        background-image: url(../img/v3resources/svg/floating-plateau-1.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: 63%;
+        height: 152px;
+        position: absolute;
+        top: 36px;
+        z-index: -1;
+    }
+    .floating-platform-2{
+        background-image: url(../img/v3resources/svg/floating-plateau-2.svg);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position-x: center;
+        height: 130px;
+        position: absolute;
+        top: -65px;
+    }
+    .leaves-right-1{
+        background: url(../img/v3resources/svg/leaves-right-1.svg) 0 no-repeat;
+        width: 100%;
+        height: 278px;
+        position: absolute;
+        background-position-x: right;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-1 {
+        left: 48%;
+        top: 24%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-2 {
+        left: 32%;
+        top: 35%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-3 {
+        left: 51%;
+        top: 46%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-pos-4 {
+        left: 21%;
+        top: 53%;
+        transition: all .3s ease-in-out;
+    }
+    .floating-platform-0 span {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        font-size: 5em;
+        color: #b07622;
+        transition: all .3s ease-in-out;
+    }
+    .leaves-bottom-left{
+        background: url(../img/v3resources/svg/leaves-bottom-left.svg) 0 no-repeat;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    
+    .leaves-bottom-right{
+        background: url(../img/v3resources/svg/leaves-bottom-right.svg) 0 no-repeat;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        background-position-x: right;
+        bottom: 0px;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+
+    .footer-bottom{
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .footer-bottom div{
+        margin: auto 30px;
+    }
+    .footer-bottom h1{
+        color: white;
+    }
+    
+    .logoBottom{
+        display: block;
+        width: 110px;
+        height: 240px;
+        background: url(../img/v3resources/svg/logo.svg) 0 no-repeat;
+        background-size: contain;
+        filter: invert(1);
+    }
+}
+@media only screen and (max-width: 600px){
+
+}
+
+
+
+
+
+
+
+
+/* ANIMATIONS */
+.animate_infinite_alternate{
+    animation: aniLeft 2s infinite alternate;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: aniLeft
+}
+
+.animate_infinite_alternate_delay_1{
+    animation-delay: 1s;
+}
+@keyframes aniLeft {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(10px);
+    }
+}

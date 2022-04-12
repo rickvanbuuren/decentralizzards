@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400;1,600&display=swap');
+
+:root{
+    --dark: #2b2d42;
+    --light: #5C636C;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+    --green-main: #81b49e;
+    --yellow-main: #F0E890;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 0.3s;
+}
+
+@keyframes aniLeft {
+    from {
+      transform: translateY(0);
+    }
+  
+    to {
+      transform: translateY(10px);
+    }
+}
+
+.animate_infinite_alternate{
+    animation: aniLeft 2s infinite alternate;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: aniLeft
+}
+
+.main-bg{
+    width: 100%;
+    min-width: 280px;
+    height: 730px;
+    padding-top: 100px;
+    position: relative;
+    background: rgb(144,203,120);
+    background: linear-gradient(0deg, rgba(144,203,120,1) 28%, rgba(212,221,151,1) 65%);
+    /* background-color: #1a68d3; */
+    /* background-image: 
+                        radial-gradient(ellipse at bottom,#1a68d3 5%,transparent 60%),
+                        linear-gradient(136deg,transparent,#71c7ee 290%),
+                        linear-gradient(115deg,#9d9af1,transparent 40%),
+                        linear-gradient(180deg,transparent 0,#1a68d3 70%),
+                        radial-gradient(ellipse at 90% 180%,transparent 80%,#71c7ee 0),
+                        radial-gradient(ellipse at bottom,#1a68d3 40%,transparent 80%),
+                        radial-gradient(ellipse at 5% 340%,transparent 80%,#bfc2f4 0);
+
+                        radial-gradient(ellipse at bottom,#1b802b 5%,transparent 60%),
+                        linear-gradient(105deg,transparent,#77fa86 290%),
+                        linear-gradient(45deg,#77fa86,transparent 40%),
+                        linear-gradient(20deg,transparent 0,#f4fcbf 70%),
+                        radial-gradient(ellipse at 90% 180%,transparent 80%,#1b802b 0),
+                        radial-gradient(ellipse at bottom,#1b802b 40%,transparent 80%),
+                        radial-gradient(ellipse at 5% 340%,transparent 80%,#1b802b 0); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.bg-gradient{
+    height: 386px;
+    background: rgb(144,203,120);
+    background: linear-gradient(180deg, rgba(144,203,120,1) 45%, rgba(255,255,255,1) 80%);
+}
+
+.main-left{
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.main-left img{
+    position: fixed;
+    left: -137px;
+    width: 330px;
+    top: 113px;
+}
+
+.main-right{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.main-right img{
+    position: fixed;
+    right: -70px;
+    width: 272px;
+    top: 0px;
+}
+
+/* .test_block{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-image: url("../img/Gecko_NFT2-01.png");
+    background-repeat: no-repeat;
+    background-size: 200px 200px;
+} */
+
+.leaf_1{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    
+}
+
+#header > nav{
+    z-index: 99;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+
+.nav-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border-shadow{
+    border: 1px solid var(--border-btn);
+    box-shadow: 1px 3px 10px #e9ecef;
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.inline{
+    display: inline-block;
+}
+
+.text-light{
+    color: var(--light);
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 54px;
+    left: 0px;
+    border-radius: 12%;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: var(--green-main); transition: all .2s ease-in-out;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; transition: all .2s ease-in-out;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+
+nav{
+    background-color: transparent;
+    padding: 1em 0;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 5px 10px rgb(17 170 139 / 0%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+}
+nav:hover{
+    background-color: white;
+    padding: 1em 0;
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.logoArea{
+    margin-left: 10px;
+}
+nav:hover > .logoArea{
+    width: fit-content;
+}
+
+.logoArea a{
+    color: white;
+}
+
+nav:hover > .logoArea a{
+    color: var(--green-main);
+    transition: all .2s ease-in-out;
+}
+
+nav > .lnbArea{
+    height: 60px;
+}
+
+nav > .lnbArea .dropdown{
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    position: relative;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+nav > .lnbArea .dropdown button, nav > .lnbArea .dropdown button a{
+    color: #fff;
+}
+
+nav:hover > .lnbArea .dropdown button, nav:hover > .lnbArea .dropdown button a{
+    color: var(--light);
+}
+
+nav > .lnbArea .dropdown:hover{
+    display: inline-block;
+    transition: all .2s ease-in-out;
+    position: relative;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    padding: 0 20px;
+    border-bottom: 4px solid var(--green-main);
+}
+
+nav > .lnbArea .dropdown:hover > button, nav > .lnbArea .dropdown:hover > button a {
+    color: var(--green-main);
+}
+
+.site-main{
+    /* padding-top: 1200px; */
+    width: 100%;
+    position: relative;
+    font-family: 'Roboto Serif', sans-serif;
+    /* background: linear-gradient(300deg,#103a69,#678cc9,#75ccff); */
+    
+}
+
+.site-main .container .box-nav > a{
+    font-size: 1em;
+    padding: .5em 1em;
+}
+
+.site-main .container form{
+    margin: 2em 0;
+}
+
+.background {
+    position: relative;
+    margin: 0px auto;
+}
+
+.background img{
+    position: absolute;
+}
+
+.gecko{
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+.gecko img{
+    position: absolute;
+    left: 380px;
+    top: 239px;
+    width: 200px;
+}
+
+.foreground{
+    position: relative;
+    top: 170px;
+}
+
+.foreground img{
+    position: absolute;
+}
+
+table{
+    border-spacing: 0px;
+    width: 100%;
+}
+
+table td, table th{
+    padding: .75em;
+    vertical-align: top;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+
+.table td > a.btn{
+    padding: .3em 1em;
+    font-size: 1.1em;
+    margin: 0 .2em;
+}
+
+.table tr:hover{
+    background-color: #06d6a0;
+}
+
+.table tr:hover td > a{
+    box-shadow: none;
+}
+
+.table .thead-dark th{
+    color: #fff;
+    background-color: var(--dark);
+    border-color: #323232;
+}
+
+@media only screen and (max-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr{
+        border: 1px solid var(--border);
+    }
+
+    td{
+        border: none;
+        position: relative;
+    }
+}
+
+/*  add user & update user template */
+.form-title{
+    margin-top: 2em;
+}
+
+.form-title > h2{
+    padding: .5em 0;
+}
+
+.new_user{
+    max-width: 786px;
+    margin: auto;
+}
+
+#update_user .form-group,
+#add_user .form-group{
+    margin: .4em 0;
+}
+
+#update_user .form-group input[type="text"],
+#add_user .form-group input[type="text"]{
+    width: 100%;
+    padding: .6em 1em;
+    margin: .5em 0;
+    border: 1px solid var(--border);
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em;
+    border-radius: .2em;
+}
+
+#update_user .form-group .radio,
+#add_user .form-group .radio{
+    margin: 1em 2em;
+}
+
+/* adding style to radio buttons */
+.radio input[type='radio']{
+    position: absolute;
+    opacity: 0;
+}
+
+.radio input[type='radio'] + .radio-label:before{
+    content: "";
+    background: var(--border-btn);
+    border-radius: 100%;
+    border: 1px solid var(--border);
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: relative;
+    top: -0em;
+    margin-right: .5em;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+
+.radio input[type='radio']:checked + .radio-label:before{
+    background-color: #16db93;
+    box-shadow: inset 0 0 0 4px #e9ecef;
+}
+
+.radio input[type='radio']:focus + .radio-label:before{
+    outline: none;
+    border-color:#16db93;
+}
+
+.radio input[type='radio']:disabled + .radio-label:before{
+    box-shadow: inset 0 0 0 4px #e9ecef;
+    border-color: #b4b4b4;
+    background: #b4b4b4;
+}
+
+#update_user .form-group .btn,
+#add_user .form-group .btn{
+    width: 100%;
+    padding: .9em 1em;
+    background-color:#16db93; 
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .2em;
+    margin: .5em 0;
+}
+
+#update_user .form-group .btn:hover,
+#add_user .form-group .btn:hover{
+    background-color: var(--dark);
+    color: var(--border);
+}
